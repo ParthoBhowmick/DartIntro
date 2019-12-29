@@ -2,6 +2,58 @@
 var mainFunc = false;
 
 void main() {
+
+// night work
+var list = [1, 1, 2, 3];
+  print(list);
+  print(list.length);
+  print(list[list.length-1]);
+  
+  //use the spread operator (...) to insert all the elements of a list into another list
+  
+  var list2 = [...list , 4];
+  print(list2);
+  
+  // null aware operator
+  
+  var list1; 
+  list2 = [...list, ...?list1];
+  print(list2.length);
+  
+  var nav = ['Home','Furniture','Plants',if(2!=3) 'outlet'];
+  print(nav);
+  
+  // list spread by for 
+  
+  var listOfInts = [1.9,2.5,3.2];
+  var listOfString = [
+    '#0',
+    for (var i in listOfInts) '#${i.toInt()}'
+  ];
+  
+  print(listOfString);
+  
+  // sets
+  var setHalogens = {'Chlorine','Bromin','Iodene'};
+  var elements = <String>{};
+  elements.add('Flourin');
+  elements.addAll(setHalogens);
+  print(elements);
+  elements.addAll(['Bromin','bromin']);
+  print(elements);
+  
+  // Maps
+  
+  var seasons = {
+    'first' : 'summer',
+    'second' : 'rainy',
+    'third' : 'autumn'
+  };
+  
+  print(seasons);
+  
+  print(5/2);
+
   // set expand with list
   var setVar = {'string', 'holly'};
   var list = ['shit', 'holly'];
